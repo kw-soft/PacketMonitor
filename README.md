@@ -72,7 +72,7 @@ fetch("https://ipinfo.io/json?token=YOUR_API_TOKEN")
 ---
 
 ## 🖥️ Screenshots
-![Live Network Map](screenshots/screenshot.png)
+![Live Network Map](screenshots/screenshot.PNG)
 
 ---
 
