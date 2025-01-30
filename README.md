@@ -93,4 +93,4 @@ Pull requests are welcome! Feel free to fork this repository and submit a PR.
 
 ## 📬 Contact
 📧 **Your Email:** kevin@kevsoft.de  
-🐙 **GitHub:** [Your GitHub](https://github.com/kw-soft)
+🐙 **GitHub:** [KW-Soft](https://github.com/kw-soft)
