@@ -23,17 +23,31 @@ cd PacketMonitor
 pip install -r requirements.txt
 ```
 
-### **3️⃣ Run the WebSocket Server**
+### **3️⃣ Install Required Network Capture Tools**
+#### **Windows**
+Scapy requires **Npcap** to capture packets on Windows. Download and install it from:
+- [Npcap Download](https://nmap.org/npcap/)
+
+Make sure to check the option **"Install Npcap in WinPcap API-compatible mode"** during installation.
+
+#### **Linux/macOS**
+No additional installation is required, as Scapy uses native network interfaces.
+Ensure you have the necessary permissions to capture packets:
+```sh
+sudo setcap cap_net_raw,cap_net_admin=eip $(which python3)
+```
+
+### **4️⃣ Run the WebSocket Server**
 ```sh
 python server.py
 ```
 
-### **4️⃣ Start Packet Sniffing (if not auto-started)**
+### **5️⃣ Start Packet Sniffing (if not auto-started)**
 ```sh
 python sniffer.py
 ```
 
-### **5️⃣ Open the Web UI**
+### **6️⃣ Open the Web UI**
 Go to **http://127.0.0.1:8080** in your browser.
 
 ---
@@ -46,7 +60,6 @@ Go to **http://127.0.0.1:8080** in your browser.
 │── requirements.txt   # Python dependencies
 │── /templates
 │   └── index.html     # Frontend UI
-
 ```
 
 ---
@@ -76,7 +89,7 @@ fetch("https://ipinfo.io/json?token=YOUR_API_TOKEN")
 
 ---
 
-## 📜 License
+## 🐜 License
 This project is licensed under the **MIT License**.
 
 ---
@@ -91,6 +104,6 @@ Pull requests are welcome! Feel free to fork this repository and submit a PR.
 
 ---
 
-## 📬 Contact
+## 💌 Contact
 📧 **Your Email:** kevin@kevsoft.de  
 🐙 **GitHub:** [KW-Soft](https://github.com/kw-soft)
